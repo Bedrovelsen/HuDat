@@ -1,5 +1,3 @@
 #!/bin/bash
-screen -L -S -dmS bcap
-screen -r bcap -X './hudat.sh'
-screen -L -dmmS display
-screen -r display -X 'tail -f screenlog.0'
+screen -L -dmS bcap
+screen -r bcap -X stuff 'sudo bettercap --iface wlan1 --script main.js\n'
