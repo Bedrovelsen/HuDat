@@ -3,8 +3,8 @@ function sendMessage(message) {
 }
 
 function calcDistance(signal) {
-	var minSig = -50.0;
-	var fspl = 29.5;
+	var minSig = -69.0;
+	var fspl = 27.5;
 	var distance = (minSig + signal) / fspl / -1;
 	return distance.toFixed(2);
 }
